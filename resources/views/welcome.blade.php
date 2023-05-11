@@ -9,7 +9,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Merienda&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
-        <link rel="stylesheet" href="css/common.css">
+        <link rel="stylesheet" href="css/style.css">
         <style>
             .availability-form{
               margin-top: -50px;
@@ -488,6 +488,9 @@
       <div class="swiper-pagination"></div>
     </div>
   </div>
+  <div class="col-lg-12 text-center mt-5">
+    <a href="#" class="btn btn-sm btn-outline-dark rounded-0 fw-bold shadow-none">Know More>>></a>
+  </div>
 
  <!-- Reach us -->
 
@@ -499,18 +502,42 @@
         <iframe class="w-100 rounded" height="320" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d254832.60117456663!2d98.52940668065038!3d3.64227564268286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x303131cc1c3eb2fd%3A0x23d431c8a6908262!2sMedan%2C%20Kota%20Medan%2C%20Sumatera%20Utara!5e0!3m2!1sid!2sid!4v1683708017117!5m2!1sid!2sid" loading="lazy"></iframe>
       </div>
       <div class="col-lg-4 col-md-4">
-        <div class="bg-white">
+        <div class="bg-white p-4 rounded mb-4">
           <h5>Call us</h5>
-          <a href="tel: +6281234565">+6281234565</a>
+          <a href="tel: +6281234565" class="d-inline-block mb-2 text-decoration-none text-dark">
+            <i class="bi bi-telephone-fill"></i> +6281234565
+          </a>
+          <br>
+          <a href="tel: +6281234565" class="d-inline-block text-decoration-none text-dark">
+            <i class="bi bi-telephone-fill"></i> +6281234565
+          </a>
+        </div>
+        <div class="bg-white p-4 rounded mb-4">
+          <h5>Follow us</h5>
+          <a href="#" class="d-inline-block mb-3">
+           <span class="badge bg-lighht text-dark fs-6 p-2">
+            <i class="bi bi-twitter me-1"></i> Twitter
+           </span>
+          </a>
+          <br>
+          <a href="#" class="d-inline-block mb-3">
+            <span class="badge bg-lighht text-dark fs-6 p-2">
+             <i class="bi bi-facebook me-1"></i> Facebook
+            </span>
+           </a>
+           <br>
+           <a href="#" class="d-inline-block">
+            <span class="badge bg-lighht text-dark fs-6 p-2">
+             <i class="bi bi-instagram me-1"></i> Instagram
+            </span>
+           </a>
         </div>
       </div>
     </div>
   </div>
 
+ <h6 class="text-center bg-dark text-white p-3 m-0">Desaigned and Developed by VALS HOTEL</h6>
 
-  <br><br><br>
-  <br><br><br>
-  
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
   
