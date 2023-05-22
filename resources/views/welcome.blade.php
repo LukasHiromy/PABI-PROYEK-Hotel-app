@@ -162,10 +162,10 @@
 <div class="swiper swiper-container">
     <div class="swiper-wrapper">
       <div class="swiper-slide">
-        <img src="images/carousel/5.jpg" class="w-100 d-block"/>
+        <img src="images/carousel/4.jpg" class="w-100 d-block"/>
       </div>
       <div class="swiper-slide">
-        <img src="images/carousel/4.jpg" class="w-100 d-block" />
+        <img src="images/carousel/5.jpg" class="w-100 d-block" />
       </div>
     </div>
   </div>
