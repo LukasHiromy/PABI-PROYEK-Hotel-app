@@ -171,18 +171,6 @@
   </div>
 </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
 <!-- Check Availability Form -->
 
 <div class="container availability-form">
