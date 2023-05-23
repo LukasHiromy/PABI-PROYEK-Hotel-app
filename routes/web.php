@@ -26,3 +26,7 @@ Route::post('auth/login', [AuthController::class, 'login']);
 Route::get('auth/register', [AuthController::class, 'showRegistrationForm'])->name('register');
 Route::post('auth/register', [AuthController::class, 'register']);
 Route::post('auth/logout', [AuthController::class, 'logout'])->name('logout');
+Route::get('/facilities', function () {
+    return view('app');
+});
+
