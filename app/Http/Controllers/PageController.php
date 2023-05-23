@@ -15,4 +15,7 @@ class PageController extends Controller
     function facilities(){
         return view("page/facilities");
     }
+    function availability(){
+        return view("page/availability-form");
+    }
 }

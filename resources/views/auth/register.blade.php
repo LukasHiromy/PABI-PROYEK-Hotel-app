@@ -1,4 +1,35 @@
-<!DOCTYPE html>
+@extends('layout.app')
+
+@section('content')
+<form method="POST" action="{{ route('register') }}">
+  @csrf
+
+  <div>
+      <label for="name">Nama:</label>
+      <input type="text" id="name" name="name" value="{{ old('name') }}" required autofocus>
+  </div>
+
+  <div>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" value="{{ old('email') }}" required>
+  </div>
+
+  <div>
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+  </div>
+
+  <div>
+      <label for="password_confirmation">Konfirmasi Password:</label>
+      <input type="password" id="password_confirmation" name="password_confirmation" required>
+  </div>
+
+  <button type="submit">Daftar</button>
+</form>
+
+@endsection
+
+{{-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,110 +37,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registrasi!</title>
 </head>
-<style>
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #fff;
-}
-
-.card {
-  background: linear-gradient(to bottom right, #0074D9, #1E90FF);
-  color: #fff;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  margin: 20px;
-  max-width: 500px;
-}
-
-
-.card-body {
-  padding: 30px;
-}
-
-.form-control {
-  background-color: #e6e6e6;
-  color: #000;
-  border-color: #e6e6e6;
-}
-
-.form-control:focus {
-  background-color: #fff;
-  color: #000;
-  border-color: #f9c846;
-  box-shadow: none;
-}
-
-.btn-primary {
-  background: #0074D9;
-  color: #fff;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-}
-
-.btn-primary:hover {
-  background-color: #1E90FF;
-  border-color: #1E90FF;
-  color: #fff;
-  transition: all 0.4s ease;
-}
-
-.col-form-label {
-  font-weight: bold;
-  color: #333;
-}
-
-.form-group {
-  margin-bottom: 30px;
-}
-
-@media screen and (max-width: 767px) {
-  .form-group {
-    margin-bottom: 20px;
-  }
-}
-
-body {
-  background-color: #f5f5f5;
-}
-
-.form-header {
-  text-align: center;
-  margin-bottom: 40px;
-}
-
-.form-header h2 {
-  font-size: 36px;
-  font-weight: bold;
-  color: #f9c846;
-  margin-bottom: 20px;
-}
-
-.form-header p {
-  font-size: 18px;
-  color: #000;
-  margin-bottom: 0;
-}
-
-.form-link {
-  text-align: center;
-  margin-top: 20px;
-}
-
-.form-link a {
-  color: #f9c846;
-  font-weight: bold;
-  text-decoration: none;
-}
-
-.form-link a:hover {
-  color: #eaa922;
-}
-</style>
 <body>
-
     <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
@@ -182,4 +110,4 @@ body {
     </div>
 </div> 
 </body>
-</html>
+</html> --}}

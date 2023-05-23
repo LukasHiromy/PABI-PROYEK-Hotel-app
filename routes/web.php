@@ -29,6 +29,8 @@ Route::post('auth/register', [AuthController::class, 'register']);
 Route::post('auth/logout', [AuthController::class, 'logout'])->name('logout');
 
 
-Route::get('/', [PageController::class, 'index']);
+Route::get('/', [PageController::class, 'index'])->name('home');
+Route::get('/', [PageController::class, 'index'])->name('home');
 Route::get('/rooms', [PageController::class, 'rooms']);
 Route::get('/facilities', [PageController::class, 'facilities']);
+Route::get('/availability', [PageController::class, 'availability']);

@@ -39,10 +39,10 @@
           <a class="nav-link active me-2" aria-current="page" href="#">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link me-2" href="#">Rooms</a>
+          <a class="nav-link me-2" href="/rooms">Rooms</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link me-2" href="#">Facilities</a>
+          <a class="nav-link me-2" href="/facilities">Facilities</a>
         </li>
         <li class="nav-item">
           <a class="nav-link me-2" href="#">Contact Us</a>
@@ -53,17 +53,17 @@
       </ul>
       <div class="d-flex">
         <button type="button" class="btn btn-outline-dark shadow-none me-lg-3 me-2" data-bs-toggle="modal" data-bs-target="#loginModal">
-           Login
+          <a href="auth/login">Login</a>
         </button>
         <button type="button" class="btn btn-outline-dark shadow-none" data-bs-toggle="modal" data-bs-target="#registerModal">
-           Register
+          <a href="auth/register">Register</a>
         </button>
     </div>
     </div>
   </div>
 </nav>
 
-<div class="modal fade" id="loginModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+{{-- <div class="modal fade" id="loginModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
         <form>
@@ -90,7 +90,7 @@
         </form>
     </div>
   </div>
-</div>
+</div> --}}
 
 <div class="modal fade" id="registerModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg">
