@@ -1,7 +1,7 @@
-<body class="bg-light">
-  <nav class="navbar navbar-expand-lg navbar-light bg-white px-lg-3 py-lg-2 shadow-sm sticky-top">
+@extends('layout/app')
+
+@section('content')
     <!-- kode program navbar di atas -->
-  </nav>
   <div class="container my-5">
     <h2 class="text-center mb-4">Facilities</h2>
     <div class="row">
@@ -19,8 +19,11 @@
               <th scope="row">1</th>
               <td>Kolam renang</td>
               <td>Terletak di lantai atas hotel dengan pemandangan yang indah</td>
+              {{-- gambarnya belum tersedia --}}
               <img src="img_1.jpg" alt="Gambar hotel dengan kolam renang di lantai atas">
             </tr>
+
+            {{-- tabelnya masih kurang gambar --}}
             <tr>
               <th scope="row">2</th>
               <td>Spa</td>
@@ -61,4 +64,4 @@
       </div>
     </div>
   </div>
-</body>
+  @endsection

@@ -1,13 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE-edge">
-	<meta name="viewport" content="width-device-width, initial-scale=1.0">
-	<title>VALS Hotel - ROOMS</title>
-</head>
-<body class="bg-light">
+@extends('layout/app')
 
+@section('content')
 	<div class="ny-5 px-4">
 		<h2 class="fw-bold h-font text-center">OUR ROOM</h2>
 		<div class="h-line bg-dark"></div>
@@ -16,6 +9,7 @@
 	<div class="container">
 		<div class="row">
 
+			{{-- fungsinya untuk apa --}}
 			<div class="col-lg-3 col-md-12 mb-lg-0 mb-4">
 				<nav class="navbar navbar-expand-lg navbar-light bg-white rounded shadow">
 					<div class="container-fluid flex-lg-column align-items-stretch">
@@ -61,9 +55,7 @@
 				</nav>
 			</div>
 
-
-
-
+			{{-- perlu di perbaiki tampilan di bagian sini --}}
 			<div class="col-lg-9 col-md-12 px-4">
 				<div class="card mb-4 border-0 shadow">
 					<div class="row g-0 p-3 align-items-center">
@@ -88,6 +80,8 @@
 							</span>
 						</div>
 						</div>
+
+						{{-- perbaiki ini  --}}
 						<h6 class="mb-1">Facilities</h6>
 							<div class="facilities mb-3">
 							<h6 class="mb-1">Features</h6>
@@ -105,6 +99,8 @@
 							</span>
 						</div>
 						</div>
+
+						{{-- perbaiki ini --}}
 						<div class="guests mb-3">
 							<h6 class="mb-1">Guests</h6>
 							<span class="badge rounded-pill bg-light text-dark text-wrap">
@@ -113,6 +109,8 @@
 							<span class="badge rounded-pill bg-light text-dark text-wrap">
 								4 Children
 							</span>
+
+							{{-- gambarnya belum ada dan perbaiki --}}
 						<img src="..." class="img-fluid rounded-start" alt="...">
 						</div>
 						<div class="col-md-2">
@@ -126,6 +124,4 @@
 					</div>
 					</div>
 
-
-</body>
-</html>
+@endsection

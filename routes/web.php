@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\PageController;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,9 +16,9 @@ use App\Http\Controllers\DashboardController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 
 Route::post('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
 
@@ -26,7 +27,10 @@ Route::post('auth/login', [AuthController::class, 'login']);
 Route::get('auth/register', [AuthController::class, 'showRegistrationForm'])->name('register');
 Route::post('auth/register', [AuthController::class, 'register']);
 Route::post('auth/logout', [AuthController::class, 'logout'])->name('logout');
-Route::get('/facilities', function () {
-    return view('app');
-});
 
+
+Route::get('/', [PageController::class, 'index'])->name('home');
+Route::get('/', [PageController::class, 'index'])->name('home');
+Route::get('/rooms', [PageController::class, 'rooms']);
+Route::get('/facilities', [PageController::class, 'facilities']);
+Route::get('/availability', [PageController::class, 'availability']);

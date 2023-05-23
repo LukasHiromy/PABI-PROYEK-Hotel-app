@@ -29,7 +29,7 @@
         
     <nav class="navbar navbar-expand-lg navbar-light bg-white px-lg-3 py-lg-2 shadow-sm sticky-top">
   <div class="container-fluid">
-    <a class="navbar-brand me-5 fw-bold fs-3 h-font" href="index.php">VALS HOTEL</a>
+    <a class="navbar-brand me-5 fw-bold fs-3 h-font" href="welcome.blade.php">VALS HOTEL</a>
     <button class="navbar-toggler shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -39,10 +39,10 @@
           <a class="nav-link active me-2" aria-current="page" href="#">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link me-2" href="#">Rooms</a>
+          <a class="nav-link me-2" href="/rooms">Rooms</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link me-2" href="#">Facilities</a>
+          <a class="nav-link me-2" href="/facilities">Facilities</a>
         </li>
         <li class="nav-item">
           <a class="nav-link me-2" href="#">Contact Us</a>
@@ -53,17 +53,17 @@
       </ul>
       <div class="d-flex">
         <button type="button" class="btn btn-outline-dark shadow-none me-lg-3 me-2" data-bs-toggle="modal" data-bs-target="#loginModal">
-           Login
+          <a href="auth/login">Login</a>
         </button>
         <button type="button" class="btn btn-outline-dark shadow-none" data-bs-toggle="modal" data-bs-target="#registerModal">
-           Register
+          <a href="auth/register">Register</a>
         </button>
     </div>
     </div>
   </div>
 </nav>
 
-<div class="modal fade" id="loginModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+{{-- <div class="modal fade" id="loginModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
         <form>
@@ -90,7 +90,7 @@
         </form>
     </div>
   </div>
-</div>
+</div> --}}
 
 <div class="modal fade" id="registerModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg">
@@ -162,10 +162,25 @@
 <div class="swiper swiper-container">
     <div class="swiper-wrapper">
       <div class="swiper-slide">
-        <img src="images/carousel/5.jpg" class="w-100 d-block"/>
+        <img src="images/carousel/norica.jpg" class="w-100 d-block"/>
       </div>
       <div class="swiper-slide">
-        <img src="images/carousel/4.jpg" class="w-100 d-block" />
+        <img src="images/carousel/norica1.jpg" class="w-100 d-block" />
+      </div>
+      <div class="swiper-slide">
+        <img src="images/carousel/norica2.jpg" class="w-100 d-block" />
+      </div>
+      <div class="swiper-slide">
+        <img src="images/carousel/norica3.jpg" class="w-100 d-block" />
+      </div>
+      <div class="swiper-slide">
+        <img src="images/carousel/norica4.jpg" class="w-100 d-block" />
+      </div>
+      <div class="swiper-slide">
+        <img src="images/carousel/norica5.jpg" class="w-100 d-block" />
+      </div>
+      <div class="swiper-slide">
+        <img src="images/carousel/norica6.jpg" class="w-100 d-block" />
       </div>
     </div>
   </div>
