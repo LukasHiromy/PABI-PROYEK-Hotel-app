@@ -4,6 +4,9 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\PageController;
+use App\Http\Controllers\RoomtypeController;
+use App\Http\Controllers\AdminController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -20,8 +23,8 @@ use App\Http\Controllers\PageController;
 //     return view('welcome');
 // });
 
-//Admin Dashboard
-Route::get('admin', function(){
+// Admin Dashboard
+Route::get('/admin', function(){
     return view('admin.admin');
 });
 
@@ -41,3 +44,7 @@ Route::get('/', [PageController::class, 'index'])->name('home');
 Route::get('/rooms', [PageController::class, 'rooms']);
 Route::get('/facilities', [PageController::class, 'facilities']);
 Route::get('/availability', [PageController::class, 'availability']);
+
+//admin roomtype route
+Route::get('/admin/roomtype/{id}/delete', [RoomtypeController::class, 'destroy']);
+Route::resource('/admin/roomtype', RoomtypeController::class);
