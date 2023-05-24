@@ -288,7 +288,7 @@
       </div>
       <div class="col-lg-4 co-md-6 my-3">
         <div class="card border-0 shadow" style="max-width: 350px; margin:auto">
-          <img src="images/rooms/1.jpg" class="card-img-top">  
+          <img src="images/rooms/2.png" class="card-img-top">  
           <div class="card-body">
             <h5>Simple Room Name</h5>
             <h6 class="mb-4">IDR200.000 per night</h6>
@@ -340,7 +340,7 @@
       </div>   
       <div class="col-lg-4 co-md-6 my-3">
         <div class="card border-0 shadow" style="max-width: 350px; margin:auto">
-          <img src="images/rooms/1.jpg" class="card-img-top">  
+          <img src="images/rooms/3.png" class="card-img-top">  
           <div class="card-body">
             <h5>Simple Room Name</h5>
             <h6 class="mb-4">IDR200.000 per night</h6>
@@ -392,7 +392,7 @@
       </div>
       <div class="col-lg-4 co-md-6 my-3">
         <div class="card border-0 shadow" style="max-width: 350px; margin:auto">
-          <img src="images/rooms/1.jpg" class="card-img-top">  
+          <img src="images/rooms/4.png" class="card-img-top">  
           <div class="card-body">
             <h5>Simple Room Name</h5>
             <h6 class="mb-4">IDR200.000 per night</h6>
@@ -444,7 +444,7 @@
       </div>   
       <div class="col-lg-4 co-md-6 my-3">
         <div class="card border-0 shadow" style="max-width: 350px; margin:auto">
-          <img src="images/rooms/1.jpg" class="card-img-top">  
+          <img src="images/rooms/5.png" class="card-img-top">  
           <div class="card-body">
             <h5>Simple Room Name</h5>
             <h6 class="mb-4">IDR200.000 per night</h6>
@@ -496,7 +496,7 @@
       </div>   
       <div class="col-lg-4 co-md-6 my-3">
         <div class="card border-0 shadow" style="max-width: 350px; margin:auto">
-          <img src="images/rooms/1.jpg" class="card-img-top">  
+          <img src="images/rooms/6.png" class="card-img-top">  
           <div class="card-body">
             <h5>Simple Room Name</h5>
             <h6 class="mb-4">IDR200.000 per night</h6>
@@ -540,7 +540,7 @@
               </span>
             </div>
             <div class="d-flex justify-content-evenly mb-2">
-            <a href="#" class="btn btn-sm text-white custom-bg shadow-none">Book Now</a>
+            <a href="http://localhost:8000/rooms" class="btn btn-sm text-white custom-bg shadow-none">Book Now</a>
             <a href="#" class="btn btn-sm btn-outline-dark shadow-none">More details</a>
             </div>
           </div>       
@@ -548,7 +548,7 @@
       </div>   
 
       <div class="col-lg-12 text-center mt-5">
-        <a href="#" class="btn btn-sm btn-outline-dark rounded-0 fw-bold shadow-none">More Rooms >>></a>
+        <a href="http://localhost:8000/rooms" class="btn btn-sm btn-outline-dark rounded-0 fw-bold shadow-none">More Rooms >>></a>
       </div>
     </div>
   </div>
@@ -580,7 +580,7 @@
       <h5 class="mt-3">Wifi</h5>
     </div>
     <div class="col-lg-12 text-center mt-5">
-      <a href="#" class="btn btn-sm btn-outline-dark rounded-0 fw-bold shadow-none">More Facilities>>></a>
+      <a href="" class="btn btn-sm btn-outline-dark rounded-0 fw-bold shadow-none">More Facilities>>></a>
     </div>
   </div>
   </div>
