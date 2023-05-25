@@ -5,7 +5,7 @@ use App\Http\Controllers\AuthController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\PageController;
 use App\Http\Controllers\RoomtypeController;
-use App\Http\Controllers\AdminController;
+use App\Http\Controllers\RoomController;
 
 
 /*
@@ -48,3 +48,7 @@ Route::get('/availability', [PageController::class, 'availability']);
 //admin roomtype route
 Route::get('/admin/roomtype/{id}/delete', [RoomtypeController::class, 'destroy']);
 Route::resource('/admin/roomtype', RoomtypeController::class);
+
+//admin room route
+Route::get('/admin/rooms/{id}/delete', [RoomController::class, 'destroy']);
+Route::resource('/admin/rooms', RoomController::class);
