@@ -13,37 +13,34 @@
     <!-- DataTales Example -->
     <div class="card shadow mb-4">
         <div class="card-header py-3">
-            <h6 class="m-0 font-weight-bold text-primary">Add RoomType
-                <a href="{{url('admin/roomtype')}}" class="float-right btn btn-success btn-sm">View All</a>
+            <h6 class="m-0 font-weight-bold text-primary">View Customer
+                <a href="{{url('admin/customer')}}" class="float-right btn btn-success btn-sm">View All</a>
             </h6>
         </div>
         <div class="card-body">
-            @if (Session::has('success'))
-            <p class="text-success">{{session('success')}}</p>
-            @endif
             <div class="table-responsive">
-                <form action="{{ url('admin/roomtype') }}" method="post">
-                    @csrf
                     <table class="table table-bordered" >
                         <tr>
-                            <th>Title</th>
-                            <td><input name="title" type="text" class="form-control"></td>
+                            <th>FullName</th>
+                            <td>{{$data->full_name}}</td>
                         </tr>
                         <tr>
-                            <th>Price</th>
-                            <td><input name="price" type="number" class="form-control"></td>
+                            <th>Photo</th>
+                            <td><img src="{{ asset('storage/app/' . $data->photo) }}"></td>
+                        </tr>                        
+                        <tr>
+                            <th>Email</th>
+                            <td>{{$data->email}}</td>
                         </tr>
                         <tr>
-                            <th>Detail</th>
-                            <td><textarea name="detail" class="form-control"></textarea></td>
+                            <th>Mobile</th>
+                            <td>{{$data->mobile}}</td>
                         </tr>
                         <tr>
-                            <td colspan="2">
-                                <input type="submit" class="btn btn-primary">
-                            </td>
+                            <th>Address</th>
+                            <td>{{$data->address}}</td>
                         </tr>
                     </table>
-                </form>
             </div>
         </div>
     </div>

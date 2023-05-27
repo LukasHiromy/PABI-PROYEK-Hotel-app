@@ -88,6 +88,22 @@
                 </div>
             </li>
 
+            <!-- CustomerMaster -->
+            <li class="nav-item">
+                <a class="nav-link @if(!request()->is('admin/customer*')) collapsed @endif collapsed" href="#" data-toggle="collapse" data-target="#CustomerMaster"
+                    aria-expanded="true" aria-controls="collapseTwo">
+                    <i class="fas fa-fw fa-users"></i>
+                    <span>Customer</span>
+                </a>
+                <div id="CustomerMaster" class="collapse @if(request()->is('admin/customer*')) collapsed @endif" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Custom Components:</h6>
+                        <a class="collapse-item" href="{{url('admin/customer/create')}}">Add New</a>
+                        <a class="collapse-item" href="{{url('admin/customer')}}">View All</a>
+                    </div>
+                </div>
+            </li>
+
         </ul>
         <!-- End of Sidebar -->
 
