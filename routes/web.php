@@ -8,6 +8,7 @@ use App\Http\Controllers\AdminController;
 use App\Http\Controllers\RoomtypeController;
 use App\Http\Controllers\RoomController;
 use App\Http\Controllers\CustomerController;
+use App\Http\Controllers\BookingController;
 
 /*
 |--------------------------------------------------------------------------
@@ -34,14 +35,19 @@ Route::get('/admin', function(){
 //user dashboard
 Route::post('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
 
+// Booking
+Route::get('/booking/{room}', [BookingController::class, 'index'])->name('booking');
+Route::post('/booking/{room}', [BookingController::class, 'store'])->name('booking.store');
+Route::get('/confirmation/{booking}', [BookingController::class, 'confirmation'])->name('confirmation');
+
+
 
 //login
-Route::get('auth/login', [AuthController::class, 'showLoginForm'])->name('login');
-Route::post('auth/login', [AuthController::class, 'login']);
-Route::get('auth/register', [AuthController::class, 'showRegistrationForm'])->name('register');
-Route::post('auth/register', [AuthController::class, 'register']);
-Route::post('auth/logout', [AuthController::class, 'logout'])->name('logout');
-
+Route::get('login', [AuthController::class, 'showLoginForm'])->name('login');
+Route::post('login', [AuthController::class, 'login']);
+Route::get('register', [AuthController::class, 'showRegistrationForm'])->name('register');
+Route::post('register', [AuthController::class, 'register']);
+Route::get('logout', [AuthController::class, 'logout'])->name('logout');
 
 Route::get('/', [PageController::class, 'index'])->name('home');
 Route::get('/rooms', [PageController::class, 'rooms']);
