@@ -26,7 +26,7 @@
             @endif
 
             @if (Session::has('success'))
-            <p class="text-success">{{session('success')}}</p>
+                <p class="text-success">{{session('success')}}</p>
             @endif
             <div class="table-responsive">
                 <form action="{{ url('admin/customer') }}" enctype="multipart/form-data" method="post">
