@@ -20,7 +20,6 @@
               <td>Kolam renang</td>
               <td>Terletak di lantai atas hotel dengan pemandangan yang indah</td>
               {{-- gambarnya belum tersedia --}}
-              <img src="img_1.jpg" alt="Gambar hotel dengan kolam renang di lantai atas">
             </tr>
 
             {{-- tabelnya masih kurang gambar --}}
@@ -61,7 +60,5 @@
             </tr>
           </tbody>
         </table>
-      </div>
-    </div>
-  </div>
-  @endsection
+
+    @endsection
