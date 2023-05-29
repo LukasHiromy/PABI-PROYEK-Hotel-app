@@ -28,7 +28,7 @@
             <div class="col-md-6">
                 <h3>Kamar Tersedia</h3>
                 <ul class="list-group">
-                    <li class="list-group-item">Tower Suite-$500 per night<a href="{{ route('booking', ['room' => 'Tower Suite']) }}"><button type="button" class="btn btn-primary">Book Now</button></a></li>
+                    <li class="list-group-item">Tower Suite-$500 per night <a href="{{ route('booking', ['room' => 'Tower Suite']) }}"><button type="button" class="btn btn-primary">Book Now</button></a></li>
                     <li class="list-group-item">Sky Suite Palais - $700 per night <a href="{{ route('booking', ['room' => 'Sky Suite Palais']) }}"><button type="button" class="btn btn-primary">Book Now</button></a></li>
                     <li class="list-group-item">2-room Suite Palais - $600 per night <a href="{{ route('booking', ['room' => '2-room Suite Palais']) }}"><button type="button" class="btn btn-primary">Book Now</button></a></li>
                     <li class="list-group-item">1-room Suite Palais- $800 per night <a href="{{ route('booking', ['room' => '2-room Suite Palais']) }}"><button type="button" class="btn btn-primary">Book Now</button></a></li>
