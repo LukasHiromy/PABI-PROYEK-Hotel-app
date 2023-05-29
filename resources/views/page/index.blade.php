@@ -82,10 +82,10 @@
       </ul>
       <div class="d-flex">
         <button type="button" class="btn btn-outline-dark shadow-none me-lg-3 me-2" data-bs-toggle="modal" data-bs-target="#loginModal">
-          <a href="auth/login">Login</a>
+          <a href="{{url('login')}}">Login</a>
         </button>
         <button type="button" class="btn btn-outline-dark shadow-none" data-bs-toggle="modal" data-bs-target="#registerModal">
-          <a href="auth/register">Register</a>
+          <a href="{{url('register')}}">Register</a>
         </button>
     </div>
     </div>
