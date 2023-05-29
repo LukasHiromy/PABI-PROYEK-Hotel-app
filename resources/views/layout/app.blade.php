@@ -37,12 +37,12 @@
                     </li>
                 </ul>
                 <div class="d-flex">
-                    <button type="button" class="btn btn-outline-dark shadow-none me-lg-3 me-2" data-bs-toggle="modal" data-bs-target="#loginModal">
-                        <a href="{{url('login')}}">Login</a>   
-                    </button>
-                    <button type="button" class="btn btn-outline-dark shadow-none" data-bs-toggle="modal" data-bs-target="#registerModal">
-                        <a href="{{url('register')}}">Register</a>
-                    </button>
+                    <a href="{{url('login')}}"> 
+                        <button type="button" class="btn btn-outline-dark shadow-none me-lg-3 me-2" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+                    </a>
+                    <a href="{{url('register')}}">
+                        <button type="button" class="btn btn-outline-dark shadow-none" data-bs-toggle="modal" data-bs-target="#registerModal">Register</button>
+                    </a>
                 </div>
             </div>
         </div>
