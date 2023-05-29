@@ -146,7 +146,7 @@
         <img src="images/rooms/3.png" class="card-img-top">  
         <div class="card-body">
           <h5>2-room Suite Palais</h5>
-          <h6 class="mb-4">$600 per nightt</h6>
+          <h6 class="mb-4">$600 per night</h6>
           <div class="features mb-4">
             <h6 class="mb-1">Features</h6>
             <span class="badge rounded-pill bg-light text-dark text-wrap">large sleeping</span>
@@ -247,7 +247,7 @@
       <div class="card border-3 shadow" style="max-width: 450px; margin:auto">
         <img src="images/rooms/5.png" class="card-img-top">  
         <div class="card-body">
-          <h5>1-Room Suite</h5>
+          <h5>1-Room Palais</h5>
           <h6 class="mb-4">$900 per night</h6>
           <div class="features mb-4">
             <h6 class="mb-1">Features</h6>
